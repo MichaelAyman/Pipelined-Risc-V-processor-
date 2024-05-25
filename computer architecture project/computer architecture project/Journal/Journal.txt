@@ -1,0 +1,41 @@
+- Worked on the integration of the Immgen and the new alu into the preexisting code
+- debugged some present issues in the old code 
+- cleaned the branching mechanism by creating the branchig unit
+- created the first set of the I instruction 
+- created the second set of the I instructions (the shifts)
+- created the LUI instruction 
+- tried to create the AUIPC instruction but failed 
+- cleaned the code (as much as i could) 
+- created the report and the architecture 
+- organized the submission file
+
+
+MS 2 ///////////rq: the dates are when teh verison of that code was done not when it was started , i worked on mutiple threads simultanesly
+
+1- implemented the forwarding unit and the hazard detection unit on pipelined inmpelimentation (2 memories) 
+2- fixed issues with the pipeline developed in the lab
+3-2024/04/21 4:22am integrated the full alu and its control unit to accomodate for all instructions tested only on add sub or
+4- 2024/04/21 5:25am : integrated the branch unit
+	needs more testing
+	but it works fine with the BEQ
+	also clened the defines of hazard unit and fowarding unit
+5-2024/04/22 12:18am: in this version we are trying to integrate the control unit to accomodate for all the flags needed for the other instructions
+cleaned the top module 
+	**what next** 
+	fix the fix the branching to accomodate for the jump
+	update architecture and wiring for to integrate all the new conditions
+6-2024/04/22 1:28am: creating the new links between the the componenets to make the operations operational
+	fixed the branching module and its consequence
+	**to do next**
+	fix the input to the reg data for auipc and jal/jalr
+7- 2024/04/23 12:11am fixed the input to the reg data for auipc and jal/jalr
+	--> done 
+	**to do next**
+	make the one memory + test
+8- 2024/04/23 1:17pm all inst + 1 mem
+	how? --> make a sclk and have the components alternate btw clocks with instructions 	read on the posedge and the data on the negedge
+	- added slow clock 
+	- changed all the clocks to sclk or ~sclk(regs)
+9-2024/04/23 3:30pm tryign to integrate the decompression unit fixed the branching signals getting out of the ALU
+10- 2024/04/23 8:19pm Here we added other files like defines and branch unit so far everything works except for the store
+11- 2024/04/23 10:13pm tryign to integrate the decompression unit fixed the branching signals getting out of the ALU
